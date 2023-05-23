@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Template Framework File -->
+        <link rel="stylesheet" href="css/framework.css" />
+        <!-- Normalize File -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Font Awesome File -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Template Master Css File -->
+        <link rel="stylesheet" href="css/master.css" />
+        <!-- Template Font "Open Sans" -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <title>Dashboard | Home</title>
+    </head>
+    <body>
+        <main class="bg:main d:flex">
+            <!-- Sidebar -->
+            <aside class="bg:white p:20 pos:relative shadow:lg">
+                <h3 class="text-center pos:relative mt:0 hide-mobile c:dark">
+                    Template 4
+                </h3>
+                <h3 class="view-mobile text-center c:dark mt:0 c:dark">T</h3>
+                <ul>
+                    <li>
+                        <a
+                            class="active d:flex align-center rad:6 fs:14 c:dark p:10 transition"
+                            href="index.html"
+                        >
+                            <i class="fa-solid fa-house fa-fw"></i>
+                            <span class="hide-mobile">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="d:flex align-center rad:6 fs:14 c:dark p:10 transition"
+                            href="settings.html"
+                        >
+                            <i class="fa-solid fa-gear fa-fw"></i>
+                            <span class="hide-mobile">Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="d:flex align-center rad:6 fs:14 c:dark p:10 transition"
+                            href="profile.html"
+                        >
+                            <i class="fa-solid fa-user fa-fw"></i>
+                            <span class="hide-mobile">Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="d:flex align-center rad:6 fs:14 c:dark p:10 transition"
+                            href="projects.html"
+                        >
+                            <i class="fa-solid fa-bars-progress fa-fw"></i>
+                            <span class="hide-mobile">Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="d:flex align-center rad:6 fs:14 c:dark p:10 transition"
+                            href="courses.html"
+                        >
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span class="hide-mobile">Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="d:flex align-center rad:6 fs:14 c:dark p:10 transition"
+                            href="friends.html"
+                        >
+                            <i class="fa-solid fa-user-group fa-fw"></i>
+                            <span class="hide-mobile">Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="d:flex align-center rad:6 fs:14 c:dark p:10 transition"
+                            href="files.html"
+                        >
+                            <i class="fa-solid fa-file fa-fw"></i>
+                            <span class="hide-mobile">Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="d:flex align-center rad:6 fs:14 c:dark p:10 transition"
+                            href="plans.html"
+                        >
+                            <i class="fa-solid fa-credit-card fa-fw"></i>
+                            <span class="hide-mobile">Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- Content -->
+            <div class="content w:full">
+                <header
+                    class="flex:between align-center bg:white p:20 shadow:md"
+                >
+                    <div class="search pos:relative">
+                        <input
+                            type="search"
+                            class="p:5 transition rad:6 border:light:alt input:border"
+                            placeholder="Type A Keyword"
+                        />
+                    </div>
+                    <div class="icons gap:20 d:flex align-center">
+                        <span class="notify pos:relative">
+                            <input type="checkbox" id="notification" hidden />
+                            <label for="notification"
+                                ><i class="fa-solid fa-bell fa-lg c:dark"></i
+                            ></label>
+                            <div
+                                class="notification bg:white rad:6 shadow:md p:20 transition"
+                            >
+                                <div class="noti flex:between align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/avatar-01.svg"
+                                        alt=""
+                                    />
+                                    <div class="message">
+                                        <h4
+                                            class="c:dark fs:14 fw-500 m:0 mb:5"
+                                        >
+                                            Mohab Abdalaziz
+                                        </h4>
+                                        <p class="c:light:alt fs:12 m:0">
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perspiciatis natus a eaque.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-ellipsis-vertical"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <div class="noti flex:between align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/avatar-02.svg"
+                                        alt=""
+                                    />
+                                    <div class="message">
+                                        <h4
+                                            class="c:dark fs:14 fw-500 m:0 mb:5"
+                                        >
+                                            Ali Abdalaziz
+                                        </h4>
+                                        <p class="c:light:alt fs:12 m:0">
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perspiciatis natus a eaque.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-ellipsis-vertical"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <div class="noti flex:between align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/avatar-03.svg"
+                                        alt=""
+                                    />
+                                    <div class="message">
+                                        <h4
+                                            class="c:dark fs:14 fw-500 m:0 mb:5"
+                                        >
+                                            Khalid Mohammed
+                                        </h4>
+                                        <p class="c:light:alt fs:12 m:0">
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perspiciatis natus a eaque.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-ellipsis-vertical"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <div class="noti flex:between align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/avatar-04.svg"
+                                        alt=""
+                                    />
+                                    <div class="message">
+                                        <h4
+                                            class="c:dark fs:14 fw-500 m:0 mb:5"
+                                        >
+                                            Sara Thamer
+                                        </h4>
+                                        <p class="c:light:alt fs:12 m:0">
+                                            Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perspiciatis natus a eaque.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-ellipsis-vertical"
+                                        ></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="c:light:alt text-center mt:10 fs:14 btn-shape"
+                                >
+                                    Clear All
+                                </div>
+                            </div>
+                        </span>
+                        <img src="images/avatar.svg" alt="" />
+                    </div>
+                </header>
+                <h1 class="main-title c:dark pos:relative ml:20 ml:10:mobile">
+                    Home
+                </h1>
+                <!-- Wrapper -->
+                <div
+                    class="wrapper d:grid gap:20 mr:20 ml:20 mr:10:mobile ml:10:mobile"
+                >
+                    <!-- Welcome -->
+                    <div
+                        class="welcome bg:white rad:6 over:hidden pos:relative shadow:sm"
+                    >
+                        <div class="intro flex:between p:20 bg:light">
+                            <div>
+                                <h2 class="c:dark m:0">Welcome</h2>
+                                <p class="c:light:alt m:0 mt:5 mb:5">
+                                    Lorem ipsum dolor sit amet, consec
+                                    <br />tetur adipisicing elit.
+                                </p>
+                            </div>
+                            <img
+                                class="hide-mobile"
+                                src="Images/welcome.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="info p:20 mt:20 d:flex text-center d:block:mobile"
+                        >
+                            <div class="c:dark mb:20:mobile">
+                                Osman Abdalaziz
+                                <span class="d:block c:light:alt mt:10"
+                                    >Full Stack Developer</span
+                                >
+                            </div>
+                            <div class="c:dark mb:20:mobile">
+                                15
+                                <span class="d:block c:light:alt mt:10"
+                                    >Projects</span
+                                >
+                            </div>
+                            <div class="c:dark mb:20:mobile">
+                                $6400
+                                <span class="d:block c:light:alt mt:10"
+                                    >Earned</span
+                                >
+                            </div>
+                        </div>
+                        <div class="visit p:20">
+                            <a
+                                class="c:white w:fit bg:blue bg:blue:hover btn-shape d:block m:auto:mobile transition"
+                                href="profile.html"
+                                >Visit Profile</a
+                            >
+                        </div>
+                    </div>
+                    <!-- Quick Draft -->
+                    <div class="quick-draft bg:white rad:6 p:20 shadow:sm">
+                        <h2 class="c:dark m:0">Quick Draft</h2>
+                        <p class="c:light:alt mt:5 mb:20">
+                            Write A Draft For Your Idea
+                        </p>
+                        <form action="">
+                            <input
+                                class="w:full border:none bg:light rad:6 d:block p:10 mb:10"
+                                type="text"
+                                placeholder="Title"
+                            />
+                            <textarea
+                                class="w:full border:none bg:light rad:6 d:block p:10 mb:10"
+                                placeholder="Your Thought"
+                            ></textarea>
+                            <input
+                                class="ml:auto d:block btn-shape border:none bg:blue c:white save transition m:auto:mobile mt:20"
+                                type="submit"
+                                value="Save"
+                            />
+                        </form>
+                    </div>
+                    <!-- Yearly Targets -->
+                    <div class="targets p:20 rad:6 bg:white shadow:sm">
+                        <h2 class="c:dark m:0">Yearly Targets</h2>
+                        <p class="c:light:alt mt:5 mb:20">
+                            Your Targets In The Year
+                        </p>
+                        <div class="target-row flex:center gap:20 mb:10">
+                            <div
+                                class="icon flex:center"
+                                style="
+                                    background-color: #e74d3c66;
+                                    border-color: var(--red-color-alt);
+                                "
+                            >
+                                <i
+                                    class="fa-solid fa-dollar-sign fa-fw fa-lg c:red:alt"
+                                ></i>
+                            </div>
+                            <div class="details">
+                                <p class="title m:0 mb:5 c:light:alt">Money</p>
+                                <span class="d:block target mb:10 c:dark"
+                                    >$20.000</span
+                                >
+                                <div
+                                    class="progress pos:relative"
+                                    style="background-color: #e74d3c66"
+                                >
+                                    <span class="bg:red" style="width: 70%">
+                                        <span class="bg:red c:white">70%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="target-row flex:center gap:20 mb:10">
+                            <div
+                                class="icon flex:center"
+                                style="
+                                    background-color: #2ecc7166;
+                                    border-color: var(--green-color-alt);
+                                "
+                            >
+                                <i
+                                    class="fa-solid fa-diagram-project fa-fw fa-lg c:green:alt"
+                                ></i>
+                            </div>
+                            <div class="details">
+                                <p class="title m:0 mb:5 c:light:alt">
+                                    Projects
+                                </p>
+                                <span class="d:block target mb:10 c:dark"
+                                    >300</span
+                                >
+                                <div
+                                    class="progress pos:relative"
+                                    style="background-color: #2ecc7166"
+                                >
+                                    <span class="bg:green" style="width: 50%">
+                                        <span class="bg:green c:white"
+                                            >50%</span
+                                        >
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="target-row flex:center gap:20">
+                            <div
+                                class="icon flex:center"
+                                style="
+                                    background-color: #3498db66;
+                                    border-color: var(--blue-color-alt);
+                                "
+                            >
+                                <i
+                                    class="fa-solid fa-users fa-fw fa-lg c:blue:alt"
+                                ></i>
+                            </div>
+                            <div class="details">
+                                <p class="title m:0 mb:5 c:light:alt">
+                                    Team Members
+                                </p>
+                                <span class="d:block target mb:10 c:dark"
+                                    >120</span
+                                >
+                                <div
+                                    class="progress pos:relative"
+                                    style="background-color: #3498db66"
+                                >
+                                    <span class="bg:blue" style="width: 90%">
+                                        <span class="bg:blue c:white">90%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tickets -->
+                    <div class="tickets shadow:sm bg:white p:20 rad:6">
+                        <h2 class="c:dark m:0">Tickets</h2>
+                        <p class="c:light:alt mt:5 mb:20">Support Tickets</p>
+                        <div class="d:flex gap:20 text-center flex:wrap">
+                            <div class="box p:20 text-center rad:6">
+                                <i
+                                    class="fa-solid fa-ticket fa-2x c:orange mb:5"
+                                ></i>
+                                <span
+                                    class="d:block c:light:alt mt:5 mb:5 fs:14"
+                                    >3400</span
+                                >
+                                <p class="m:0 mt:5px c:dark">Total</p>
+                            </div>
+                            <div class="box p:20 text-center rad:6">
+                                <i
+                                    class="fa-solid fa-spinner fa-2x c:blue mb:5"
+                                ></i>
+                                <span
+                                    class="d:block c:light:alt mt:5 mb:5 fs:14"
+                                    >2000</span
+                                >
+                                <p class="m:0 mt:5px c:dark">Pending</p>
+                            </div>
+                            <div class="box p:20 text-center rad:6">
+                                <i
+                                    class="fa-solid fa-check fa-2x c:green mb:5"
+                                ></i>
+                                <span
+                                    class="d:block c:light:alt mt:5 mb:5 fs:14"
+                                    >1000</span
+                                >
+                                <p class="m:0 mt:5px c:dark">Approved</p>
+                            </div>
+                            <div class="box p:20 text-center rad:6">
+                                <i
+                                    class="fa-solid fa-xmark fa-2x c:red mb:5"
+                                ></i>
+                                <span
+                                    class="d:block c:light:alt mt:5 mb:5 fs:14"
+                                    >400</span
+                                >
+                                <p class="m:0 mt:5px c:dark">Deleted</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News -->
+                    <div class="news shadow:sm bg:white p:20 rad:6">
+                        <h2 class="m:0 mb:20 c:dark">Latest News</h2>
+                        <div
+                            class="new d:flex align-center d:block:mobile text-center:mobile"
+                        >
+                            <img
+                                class="rad:6"
+                                src="images/news-01.png"
+                                alt=""
+                            />
+                            <div class="info ml:10">
+                                <h4 class="c:dark fs:14 m:0 mb:5">
+                                    New SASS Category
+                                </h4>
+                                <p class="c:light:alt fs:12 m:0">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <div
+                                class="label btn-shape bg:light c:light:alt fs:12"
+                            >
+                                3 Days Ago
+                            </div>
+                        </div>
+                        <div
+                            class="new d:flex align-center d:block:mobile text-center:mobile"
+                        >
+                            <img
+                                class="rad:6"
+                                src="images/news-02.png"
+                                alt=""
+                            />
+                            <div class="info ml:10">
+                                <h4 class="c:dark fs:14 m:0 mb:5">
+                                    New Python Category
+                                </h4>
+                                <p class="c:light:alt fs:12 m:0">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <div
+                                class="label btn-shape bg:light c:light:alt fs:12"
+                            >
+                                6 Days Ago
+                            </div>
+                        </div>
+                        <div
+                            class="new d:flex align-center d:block:mobile text-center:mobile"
+                        >
+                            <img
+                                class="rad:6"
+                                src="images/news-03.png"
+                                alt=""
+                            />
+                            <div class="info ml:10">
+                                <h4 class="c:dark fs:14 m:0 mb:5">
+                                    New PHP Category
+                                </h4>
+                                <p class="c:light:alt fs:12 m:0">
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                            <div
+                                class="label btn-shape bg:light c:light:alt fs:12"
+                            >
+                                7 Days Ago
+                            </div>
+                        </div>
+                        <div
+                            class="new d:flex align-center d:block:mobile text-center:mobile"
+                        >
+                            <img
+                                class="rad:6"
+                                src="images/news-04.png"
+                                alt=""
+                            />
+                            <div class="info ml:10">
+                                <h4 class="c:dark fs:14 m:0 mb:5">
+                                    New Money Added
+                                </h4>
+                                <p class="c:light:alt fs:12 m:0">
+                                    Lorem ipsum dolor sit 100$
+                                </p>
+                            </div>
+                            <div
+                                class="label btn-shape bg:light c:light:alt fs:12"
+                            >
+                                9 Days Ago
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tasks -->
+                    <div class="tasks shadow:sm bg:white p:20 rad:6">
+                        <h2 class="m:0 c:dark mb:20">Latest Tasks</h2>
+                        <div class="task done d:flex flex:between align-center">
+                            <div>
+                                <h4 class="c:dark m:0 mb:5 fs:14">
+                                    Create New Category
+                                </h4>
+                                <p class="m:0 c:light:alt fs:12">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <div>
+                                <i
+                                    class="c:dark fa-solid fa-trash-can delete"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="task d:flex flex:between align-center">
+                            <div>
+                                <h4 class="c:dark m:0 mb:5 fs:14">
+                                    Create New Category
+                                </h4>
+                                <p class="m:0 c:light:alt fs:12">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <div>
+                                <i
+                                    class="c:dark fa-solid fa-trash-can delete"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="task d:flex flex:between align-center">
+                            <div>
+                                <h4 class="c:dark m:0 mb:5 fs:14">
+                                    Create New Category
+                                </h4>
+                                <p class="m:0 c:light:alt fs:12">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <div>
+                                <i
+                                    class="c:dark fa-solid fa-trash-can delete"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="task done d:flex flex:between align-center">
+                            <div>
+                                <h4 class="c:dark m:0 mb:5 fs:14">
+                                    Create New Category
+                                </h4>
+                                <p class="m:0 c:light:alt fs:12">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <div>
+                                <i
+                                    class="c:dark fa-solid fa-trash-can delete"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="task d:flex flex:between align-center">
+                            <div>
+                                <h4 class="c:dark m:0 mb:5 fs:14">
+                                    Create New Category
+                                </h4>
+                                <p class="m:0 c:light:alt fs:12">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <div>
+                                <i
+                                    class="c:dark fa-solid fa-trash-can delete"
+                                ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Search -->
+                    <div class="top-search shadow:sm p:20 rad:6 bg:white">
+                        <h2 class="c:dark m:0 mb:20">Top Search Items</h2>
+                        <div class="flex:between">
+                            <div>
+                                <p class="fs:14 c:light:alt fw-500 mt:0">
+                                    Keyword
+                                </p>
+                                <ul>
+                                    <li class="mb:20 btn-shape pl:0">PHP</li>
+                                    <li class="mb:20 btn-shape pl:0">Html</li>
+                                    <li class="mb:20 btn-shape pl:0">
+                                        Programming
+                                    </li>
+                                    <li class="mb:20 btn-shape pl:0">
+                                        Designing
+                                    </li>
+                                    <li class="mb:20 btn-shape pl:0">
+                                        CSS Tricks
+                                    </li>
+                                    <li class="mb:20 btn-shape pl:0">
+                                        Javascript Library
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="fs:14 c:light:alt fw-500 mt:0">
+                                    Search Count
+                                </p>
+                                <ul class="search-count">
+                                    <li
+                                        class="mb:20 btn-shape bg:light c:light:alt text-center w:fit ml:auto"
+                                    >
+                                        232
+                                    </li>
+                                    <li
+                                        class="mb:20 btn-shape bg:light c:light:alt text-center w:fit ml:auto"
+                                    >
+                                        213
+                                    </li>
+                                    <li
+                                        class="mb:20 btn-shape bg:light c:light:alt text-center w:fit ml:auto"
+                                    >
+                                        163
+                                    </li>
+                                    <li
+                                        class="mb:20 btn-shape bg:light c:light:alt text-center w:fit ml:auto"
+                                    >
+                                        89
+                                    </li>
+                                    <li
+                                        class="mb:20 btn-shape bg:light c:light:alt text-center w:fit ml:auto"
+                                    >
+                                        67
+                                    </li>
+                                    <li
+                                        class="mb:20 btn-shape bg:light c:light:alt text-center w:fit ml:auto"
+                                    >
+                                        56
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Latest Uploads -->
+                    <div class="latest-upload shadow:sm p:20 rad:6 bg:white">
+                        <h2 class="c:dark m:0 mb:20">Latest Uploads</h2>
+                        <ul>
+                            <li class="flex:between align-center">
+                                <div class="d:flex align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/pdf.png"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <span
+                                            class="d:block c:dark fs:14 fw-500 mb:5"
+                                        >
+                                            my-pdf-file.pdf
+                                        </span>
+                                        <span class="d:block c:light:alt fs:12"
+                                            >Osman</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-shape bg:light c:light:alt fs:12"
+                                >
+                                    10.5MB
+                                </div>
+                            </li>
+                            <li class="flex:between align-center">
+                                <div class="d:flex align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/jpg.png"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <span
+                                            class="d:block c:dark fs:14 fw-500 mb:5"
+                                        >
+                                            my-jpg-file.jpg
+                                        </span>
+                                        <span class="d:block c:light:alt fs:12"
+                                            >Mohab</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-shape bg:light c:light:alt fs:12"
+                                >
+                                    5.87MB
+                                </div>
+                            </li>
+                            <li class="flex:between align-center">
+                                <div class="d:flex align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/exe.png"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <span
+                                            class="d:block c:dark fs:14 fw-500 mb:5"
+                                        >
+                                            my-exe-file.exe
+                                        </span>
+                                        <span class="d:block c:light:alt fs:12"
+                                            >Shahad</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-shape bg:light c:light:alt fs:12"
+                                >
+                                    55.23MB
+                                </div>
+                            </li>
+                            <li class="flex:between align-center">
+                                <div class="d:flex align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/mp4.png"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <span
+                                            class="d:block c:dark fs:14 fw-500 mb:5"
+                                        >
+                                            my-mp4-file.mp4
+                                        </span>
+                                        <span class="d:block c:light:alt fs:12"
+                                            >Mohammed</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-shape bg:light c:light:alt fs:12"
+                                >
+                                    1.2GB
+                                </div>
+                            </li>
+                            <li class="flex:between align-center">
+                                <div class="d:flex align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/psd.png"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <span
+                                            class="d:block c:dark fs:14 fw-500 mb:5"
+                                        >
+                                            my-psd-file.psd
+                                        </span>
+                                        <span class="d:block c:light:alt fs:12"
+                                            >Hammam</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-shape bg:light c:light:alt fs:12"
+                                >
+                                    17.4MB
+                                </div>
+                            </li>
+                            <li class="flex:between align-center">
+                                <div class="d:flex align-center">
+                                    <img
+                                        class="mr:20"
+                                        src="images/zip.png"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <span
+                                            class="d:block c:dark fs:14 fw-500 mb:5"
+                                        >
+                                            my-zip-file.zip
+                                        </span>
+                                        <span class="d:block c:light:alt fs:12"
+                                            >Admin</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="btn-shape bg:light c:light:alt fs:12"
+                                >
+                                    74.42MB
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Current Project -->
+                    <div class="current-project shadow:sm p:20 bg:white rad:6">
+                        <h2 class="c:dark m:0 mb:20">Current Project</h2>
+                        <ul class="pos:relative">
+                            <li
+                                class="done mb:20 c:dark d:flex align-center fw-500"
+                            >
+                                Got The Idea Of The Project
+                            </li>
+                            <li
+                                class="done mb:20 c:dark d:flex align-center fw-500"
+                            >
+                                Start The Project
+                            </li>
+                            <li
+                                class="done mb:20 c:dark d:flex align-center fw-500"
+                            >
+                                The Project To Finish
+                            </li>
+                            <li
+                                class="current mb:20 c:dark d:flex align-center fw-500"
+                            >
+                                Test The Project
+                            </li>
+                            <li class="c:dark d:flex align-center fw-500">
+                                Finish The Project
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Reminders -->
+                    <div class="reminders shadow:sm p:20 bg:white rad:6">
+                        <h2 class="c:dark m:0 mb:20">Reminders List</h2>
+                        <div class="mb:20 pos:relative blue ml:30 pl:10">
+                            <h3 class="c:dark fw-500 fs:14 mb:10">
+                                Check My Tasks List
+                            </h3>
+                            <p class="c:light:alt fs:12 m:0">
+                                14/5/2022 - 12:30pm
+                            </p>
+                        </div>
+                        <div class="mb:20 pos:relative green ml:30 pl:10">
+                            <h3 class="c:dark fw-500 fs:14 mb:10">
+                                Check My Project List
+                            </h3>
+                            <p class="c:light:alt fs:12 m:0">
+                                23/5/2022 - 10:30pm
+                            </p>
+                        </div>
+                        <div class="mb:20 pos:relative yellow ml:30 pl:10">
+                            <h3 class="c:dark fw-500 fs:14 mb:10">
+                                Call My Mom
+                            </h3>
+                            <p class="c:light:alt fs:12 m:0">
+                                24/5/2022 - 6:15pm
+                            </p>
+                        </div>
+                        <div class="pos:relative red ml:30 pl:10">
+                            <h3 class="c:dark fw-500 fs:14 mb:10">
+                                Pay The Bills
+                            </h3>
+                            <p class="c:light:alt fs:12 m:0">
+                                30/5/2022 - 7:00am
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Latest Post -->
+                    <div class="latest-post shadow:sm p:20 bg:white rad:6">
+                        <h2 class="c:dark m:0 mb:20">Latest Post</h2>
+                        <div class="d:flex info align-center">
+                            <img class="mr:20" src="images/avatar.svg" alt="" />
+                            <div class="flex:1">
+                                <span class="c:dark fs:14 fw-500 d:block mb:10"
+                                    >Osman Abdalaziz</span
+                                >
+                                <span
+                                    class="c:light:alt fs:12 btn-shape bg:light"
+                                    >About 4 Days Ago</span
+                                >
+                            </div>
+                        </div>
+                        <p class="c:light:alt fs:14">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Consequatur culpa neque, dolores nihil a eaque
+                            adipisci aperiam velit doloremque.
+                        </p>
+                        <div class="align-center flex:between">
+                            <span class="likes c:light:alt btn-shape"
+                                ><i
+                                    class="fa-regular fa-heart fa-fw transition"
+                                ></i>
+                                3.2K</span
+                            >
+                            <span class="comments c:light:alt btn-shape"
+                                ><i class="fa-regular fa-comments fa-fw"></i>
+                                1.1K</span
+                            >
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <footer
+                    class="text-center bg:white p:20 shadow:md c:light:alt fs:14 mt:30 pos:relative"
+                >
+                    Made With
+                    <input type="checkbox" hidden id="heart-effect" />
+                    <label for="heart-effect"
+                        ><i class="fa-solid fa-heart c:dark transition"></i
+                    ></label>
+                    By
+                    <span
+                        class="c:dark mb:5:mobile d:inline-block:mobile fw-500"
+                        >Osman Abdalaziz</span
+                    >
+                    Copyright &copy; 2022
+                </footer>
+            </div>
+        </main>
+    </body>
+</html>

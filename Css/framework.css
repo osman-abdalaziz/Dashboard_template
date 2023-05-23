@@ -1,0 +1,470 @@
+/* Variable Module */
+:root {
+    /* Colors */
+    --dark-color: #19232d;
+    --light-color: #e2e2e2;
+    --light-color-alt: #828282;
+    --blue-color: #3498db;
+    --blue-color-alt: #2980b9;
+    --red-color: #e74d3c;
+    --red-color-alt: #c0392b;
+    --green-color: #2ecc71;
+    --green-color-alt: #27ae60;
+    --yellow-color: #f1c40f;
+    --yellow-color-alt: #f39c12;
+    --orange-color: #e67e22;
+    --orange-color-alt: #d35400;
+    --main-background: #f1f5f9;
+}
+/* Global Module */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+*:focus::placeholder {
+    opacity: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Box Module */
+.d\:flex {
+    display: flex;
+}
+
+.flex\:wrap {
+    flex-wrap: wrap;
+}
+
+.d\:grid {
+    display: grid;
+}
+
+.d\:block {
+    display: block;
+}
+
+.gap\:20 {
+    gap: 20px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.view-mobile {
+    display: none;
+}
+
+.w\:full {
+    width: 100%;
+}
+
+.w\:fit {
+    width: fit-content;
+}
+
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+    .view-mobile {
+        display: block;
+    }
+    .d\:block\:mobile {
+        display: block;
+    }
+    .d\:inline-block\:mobile {
+        display: inline-block;
+    }
+}
+
+.over\:hidden {
+    overflow: hidden;
+}
+/* Padding & Margin Module */
+.p\:0 {
+    padding: 0;
+}
+
+.p\:5 {
+    padding: 5px;
+}
+
+.p\:10 {
+    padding: 10px;
+}
+
+.p\:20 {
+    padding: 20px;
+}
+
+.pl\:0 {
+    padding-left: 0 !important;
+}
+
+.pl\:10 {
+    padding-left: 10px !important;
+}
+
+.m\:0 {
+    margin: 0;
+}
+
+.m\:10 {
+    margin: 10px;
+}
+
+.m\:20 {
+    margin: 20px;
+}
+
+.mt\:0 {
+    margin-top: 0;
+}
+
+.mt\:5 {
+    margin-top: 5px;
+}
+
+.mt\:10 {
+    margin-top: 10px;
+}
+
+.mt\:20 {
+    margin-top: 20px;
+}
+
+.mt\:30 {
+    margin-top: 30px;
+}
+
+.mr\:20 {
+    margin-right: 20px;
+}
+
+.mb\:5 {
+    margin-bottom: 5px;
+}
+
+.mb\:10 {
+    margin-bottom: 10px;
+}
+
+.mb\:20 {
+    margin-bottom: 20px;
+}
+
+.ml\:10 {
+    margin-left: 10px;
+}
+
+.ml\:20 {
+    margin-left: 20px;
+}
+
+.ml\:25 {
+    margin-left: 25px;
+}
+
+.ml\:30 {
+    margin-left: 30px;
+}
+
+.ml\:auto {
+    margin-left: auto;
+}
+
+@media (max-width: 767px) {
+    .mr\:10\:mobile {
+        margin-right: 10px;
+    }
+    .ml\:10\:mobile {
+        margin-left: 10px;
+    }
+    .mb\:5\:mobile {
+        margin-bottom: 5px;
+    }
+    .mb\:20\:mobile {
+        margin-bottom: 20px;
+    }
+    .m\:auto\:mobile {
+        margin: auto;
+    }
+}
+/* Border & Shadow Module */
+.rad\:6 {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.shadow\:sm {
+    box-shadow: 0 0 40px -40px #000;
+}
+
+.shadow\:md {
+    box-shadow: 0 0 40px -30px rgba(50, 50, 50, 0.348);
+}
+
+.shadow\:lg {
+    box-shadow: 0 0 40px -20px rgba(50, 50, 50, 0.348);
+}
+/* Colors Module */
+.c\:dark {
+    color: var(--dark-color);
+}
+
+.border\:light\:alt {
+    border: 1px solid var(--light-color-alt);
+}
+
+.input\:border:focus {
+    border: 1px solid var(--blue-color-alt);
+}
+
+.border\:none {
+    border: none;
+}
+
+.c\:white {
+    color: white;
+}
+
+.c\:light {
+    color: var(--light-color);
+}
+
+.c\:light\:alt {
+    color: var(--light-color-alt);
+}
+
+.c\:blue {
+    color: var(--blue-color);
+}
+
+.c\:blue\:alt {
+    color: var(--blue-color-alt);
+}
+
+.c\:red {
+    color: var(--red-color);
+}
+
+.c\:red\:alt {
+    color: var(--red-color-alt);
+}
+
+.c\:green {
+    color: var(--green-color);
+}
+
+.c\:green\:alt {
+    color: var(--green-color-alt);
+}
+
+.c\:yellow {
+    color: var(--yellow-color);
+}
+
+.c\:yellow\:alt {
+    color: var(--yellow-color-alt);
+}
+
+.c\:orange {
+    color: var(--orange-color);
+}
+
+.c\:orange\:alt {
+    color: var(--orange-color-alt);
+}
+
+.bg\:dark {
+    background-color: var(--dark-color);
+}
+
+.bg\:light {
+    background-color: var(--light-color);
+}
+
+.bg\:light\:alt {
+    background-color: var(--light-color-alt);
+}
+
+.bg\:white {
+    background-color: white;
+}
+
+.bg\:main {
+    background-color: var(--main-background);
+}
+
+.bg\:blue {
+    background-color: var(--blue-color);
+}
+
+.bg\:blue\:alt {
+    background-color: var(--blue-color-alt);
+}
+
+.bg\:red {
+    background-color: var(--red-color);
+}
+
+.bg\:red\:alt {
+    background-color: var(--red-color-alt);
+}
+
+.bg\:green {
+    background-color: var(--green-color);
+}
+
+.bg\:green\:alt {
+    background-color: var(--green-color-alt);
+}
+
+.bg\:yellow {
+    background-color: var(--yellow-color);
+}
+
+.bg\:yellow\:alt {
+    background-color: var(--yellow-color-alt);
+}
+
+.bg\:orange {
+    background-color: var(--orange-color);
+}
+
+.bg\:orange\:alt {
+    background-color: var(--orange-color-alt);
+}
+
+/* Text Module */
+.fs\:12 {
+    font-size: 12px !important;
+}
+
+.fs\:14 {
+    font-size: 14px !important;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-normal {
+    font-weight: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .text-center\:mobile {
+        text-align: center;
+    }
+}
+
+/* Position Module */
+.pos\:relative {
+    position: relative;
+}
+/* Animation Module */
+.transition {
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+/* Components Module */
+.flex\:between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex\:center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex\:1 {
+    flex: 1;
+}
+
+.main-title {
+    margin-bottom: 40px;
+    width: 150px;
+}
+
+.main-title::before,
+.main-title::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -10px;
+    left: 2px;
+}
+
+.main-title::before {
+    width: 80%;
+    background-color: white;
+}
+
+.main-title::after {
+    width: 30%;
+    background-color: var(--dark-color);
+}
+
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 25px;
+    }
+    .main-title::before {
+        width: 60%;
+        background-color: white;
+    }
+
+    .main-title::after {
+        width: 20%;
+        background-color: var(--dark-color);
+    }
+}
+
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
